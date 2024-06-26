@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zjitc.zrt.blogspb.dao.ClasMapper">
+
+
+    <select id="findAll" resultType="zjitc.zrt.blogspb.domain.Clas">
+        select *
+        from t_class;
+    </select>
+    <select id="findcsbyid" resultType="zjitc.zrt.blogspb.domain.Clas">
+        select *
+        from t_class where id = #{id};
+    </select>
+</mapper>
